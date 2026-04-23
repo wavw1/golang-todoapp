@@ -1,0 +1,6 @@
+2026-04-23T22:25:57.041830	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-04-23T22:25:57.055200	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-04-23T22:25:57.055490	DEBUG	todoapp/main.go:49	initializing HTTP server
+2026-04-23T22:25:57.055863	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-23T23:27:22.859542	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-23T23:27:22.859804	WARN	server/server.go:77	HTTP server stopped

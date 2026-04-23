@@ -1,0 +1,14 @@
+2026-04-23T23:32:41.182412	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-04-23T23:32:41.195350	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-04-23T23:32:41.195494	DEBUG	todoapp/main.go:49	initializing HTTP server
+2026-04-23T23:32:41.195672	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-23T23:37:28.709008	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "c352314c-f3f0-4123-92a1-a7b215b5a595", "url": "/api/v1/users", "time": "2026-04-23T20:37:28.709006"}
+2026-04-23T23:37:28.709161	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "c352314c-f3f0-4123-92a1-a7b215b5a595", "url": "/api/v1/users", "status_code": 405, "latency": "154.672µs"}
+2026-04-23T23:37:40.765068	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "5a353ba8-6bc7-4761-8692-707aa4b80f86", "url": "/api/v1/users", "time": "2026-04-23T20:37:40.765064"}
+2026-04-23T23:37:40.765275	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "5a353ba8-6bc7-4761-8692-707aa4b80f86", "url": "/api/v1/users", "error": "decode json: EOF"}
+2026-04-23T23:37:40.765391	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "5a353ba8-6bc7-4761-8692-707aa4b80f86", "url": "/api/v1/users", "status_code": 500, "latency": "326.199µs"}
+2026-04-23T23:38:16.032717	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "d3f3a565-912e-4882-a92e-77846efd456d", "url": "/api/v1/users", "time": "2026-04-23T20:38:16.032713"}
+2026-04-23T23:38:16.033197	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "d3f3a565-912e-4882-a92e-77846efd456d", "url": "/api/v1/users", "error": "request validation: Key: 'CreateUserRequest.FullName' Error:Field validation for 'FullName' failed on the 'required' tag"}
+2026-04-23T23:38:16.033302	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "d3f3a565-912e-4882-a92e-77846efd456d", "url": "/api/v1/users", "status_code": 500, "latency": "588.613µs"}
+2026-04-23T23:41:18.061626	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-23T23:41:18.061892	WARN	server/server.go:77	HTTP server stopped

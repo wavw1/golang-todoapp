@@ -1,0 +1,11 @@
+2026-04-23T23:59:06.884429	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-04-23T23:59:06.896191	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-04-23T23:59:06.896305	DEBUG	todoapp/main.go:49	initializing HTTP server
+2026-04-23T23:59:06.896468	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-23T23:59:16.621891	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "6e47c2e9-6d19-44ad-9238-edf225a454d9", "url": "/api/v1/users", "time": "2026-04-23T20:59:16.621888"}
+2026-04-23T23:59:16.622210	WARN	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "6e47c2e9-6d19-44ad-9238-edf225a454d9", "url": "/api/v1/users", "error": "request validation: Key: 'CreateUserRequest.FullName' Error:Field validation for 'FullName' failed on the 'required' tag: invalid argument"}
+2026-04-23T23:59:16.622293	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "6e47c2e9-6d19-44ad-9238-edf225a454d9", "url": "/api/v1/users", "status_code": 400, "latency": "404.163µs"}
+2026-04-23T23:59:34.523395	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "eced9d81-b70b-4386-acbc-e986d492fa0e", "url": "/api/v1/users", "time": "2026-04-23T20:59:34.523392"}
+2026-04-23T23:59:34.529172	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "eced9d81-b70b-4386-acbc-e986d492fa0e", "url": "/api/v1/users", "status_code": 201, "latency": "5.776845ms"}
+2026-04-23T23:59:54.752221	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-23T23:59:54.752630	WARN	server/server.go:77	HTTP server stopped

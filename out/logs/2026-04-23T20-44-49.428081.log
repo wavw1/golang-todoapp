@@ -1,0 +1,5 @@
+2026-04-23T23:44:49.428284	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-04-23T23:44:49.441864	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-04-23T23:44:49.441972	DEBUG	todoapp/main.go:49	initializing HTTP server
+2026-04-23T23:44:49.442106	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-23T23:44:59.934015	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "17d94491-638c-4211-afa9-518e1115991d", "url": "/api/v1/users", "time": "2026-04-23T20:44:59.934011"}
