@@ -36,6 +36,9 @@ func (h *HTTPResponseHandler) JSONResponse(
 		h.log.Error("write HTTP response", zap.Error(err))
 	}
 }
+func (h *HTTPResponseHandler) NoContentResponse() {
+	h.rw.WriteHeader(http.StatusNoContent)
+}
 
 func (h *HTTPResponseHandler) ErrorResponse(err error, msg string) {
 	var (

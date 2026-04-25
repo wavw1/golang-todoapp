@@ -1,0 +1,13 @@
+2026-04-24T12:15:40.073564	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-04-24T12:15:40.084892	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-04-24T12:15:40.084992	DEBUG	todoapp/main.go:49	initializing HTTP server
+2026-04-24T12:15:40.085179	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-24T12:16:33.565242	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "ee4c4b9d-4464-4301-8ef0-94db9b4a6ab6", "url": "/api/v1/users/35", "http_method": "DELETE", "time": "2026-04-24T09:16:33.565239"}
+2026-04-24T12:16:33.571417	DEBUG	middleware/common.go:88	<<< done HTTP request	{"request_id": "ee4c4b9d-4464-4301-8ef0-94db9b4a6ab6", "url": "/api/v1/users/35", "status_code": 204, "latency": "6.162506ms"}
+2026-04-24T12:16:42.997844	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "e4922653-7c2b-48fd-af45-19035957076a", "url": "/api/v1/users", "http_method": "GET", "time": "2026-04-24T09:16:42.997840"}
+2026-04-24T12:16:43.000661	DEBUG	middleware/common.go:88	<<< done HTTP request	{"request_id": "e4922653-7c2b-48fd-af45-19035957076a", "url": "/api/v1/users", "status_code": 200, "latency": "2.809945ms"}
+2026-04-24T12:17:08.257943	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "ad76ceac-ccdf-4cde-8722-d364cae950ca", "url": "/api/v1/users/323214", "http_method": "DELETE", "time": "2026-04-24T09:17:08.257940"}
+2026-04-24T12:17:08.259266	DEBUG	response/handler.go:67	failed to delete user	{"request_id": "ad76ceac-ccdf-4cde-8722-d364cae950ca", "url": "/api/v1/users/323214", "error": "delete user: user with id='323214': not found"}
+2026-04-24T12:17:08.259435	DEBUG	middleware/common.go:88	<<< done HTTP request	{"request_id": "ad76ceac-ccdf-4cde-8722-d364cae950ca", "url": "/api/v1/users/323214", "status_code": 404, "latency": "1.494629ms"}
+2026-04-24T12:17:46.661893	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-24T12:17:46.662309	WARN	server/server.go:77	HTTP server stopped

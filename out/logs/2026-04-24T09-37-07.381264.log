@@ -1,0 +1,21 @@
+2026-04-24T12:37:07.381475	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-04-24T12:37:07.394448	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-04-24T12:37:07.394631	DEBUG	todoapp/main.go:49	initializing HTTP server
+2026-04-24T12:37:07.394846	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-24T12:37:24.487716	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "e69516df-4655-45ac-8cfc-f87a2f044c42", "url": "/api/v1/users/111", "http_method": "PATCH", "time": "2026-04-24T09:37:24.487711"}
+2026-04-24T12:37:24.488016	DEBUG	http/patch_user.go:32	PatchUserRequest fields:
+Fullname: '<nil>'
+PhoneNumber: '<nil>'	{"request_id": "e69516df-4655-45ac-8cfc-f87a2f044c42", "url": "/api/v1/users/111"}
+2026-04-24T12:37:24.488089	DEBUG	middleware/common.go:88	<<< done HTTP request	{"request_id": "e69516df-4655-45ac-8cfc-f87a2f044c42", "url": "/api/v1/users/111", "status_code": 200, "latency": "377.281µs"}
+2026-04-24T12:38:02.538145	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "d3329647-4e9c-4098-93b8-8a54cc59055e", "url": "/api/v1/users/111", "http_method": "PATCH", "time": "2026-04-24T09:38:02.538141"}
+2026-04-24T12:38:02.538362	DEBUG	http/patch_user.go:32	PatchUserRequest fields:
+Fullname: '<nil>'
+PhoneNumber: '0xb3b26c32760'	{"request_id": "d3329647-4e9c-4098-93b8-8a54cc59055e", "url": "/api/v1/users/111"}
+2026-04-24T12:38:02.538402	DEBUG	middleware/common.go:88	<<< done HTTP request	{"request_id": "d3329647-4e9c-4098-93b8-8a54cc59055e", "url": "/api/v1/users/111", "status_code": 200, "latency": "259.843µs"}
+2026-04-24T12:38:28.193468	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "91b7f11a-716b-43f4-a326-dd21546a6ad1", "url": "/api/v1/users/111", "http_method": "PATCH", "time": "2026-04-24T09:38:28.193465"}
+2026-04-24T12:38:28.193659	DEBUG	http/patch_user.go:32	PatchUserRequest fields:
+Fullname: '<nil>'
+PhoneNumber: '<nil>'	{"request_id": "91b7f11a-716b-43f4-a326-dd21546a6ad1", "url": "/api/v1/users/111"}
+2026-04-24T12:38:28.193706	DEBUG	middleware/common.go:88	<<< done HTTP request	{"request_id": "91b7f11a-716b-43f4-a326-dd21546a6ad1", "url": "/api/v1/users/111", "status_code": 200, "latency": "240.907µs"}
+2026-04-24T12:40:20.846568	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-24T12:40:20.847006	WARN	server/server.go:77	HTTP server stopped
