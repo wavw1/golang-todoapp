@@ -1,8 +1,0 @@
-2026-04-23T23:49:50.394785	DEBUG	todoapp/main.go:34	initializing postgres connection pool
-2026-04-23T23:49:50.405647	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
-2026-04-23T23:49:50.405767	DEBUG	todoapp/main.go:49	initializing HTTP server
-2026-04-23T23:49:50.405950	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
-2026-04-23T23:49:53.778975	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "8a1123f5-4fcc-40b0-adca-2b074b400de7", "url": "/api/v1/users", "time": "2026-04-23T20:49:53.778973"}
-2026-04-23T23:49:53.784205	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "8a1123f5-4fcc-40b0-adca-2b074b400de7", "url": "/api/v1/users", "status_code": 201, "latency": "5.228254ms"}
-2026-04-23T23:59:01.762298	WARN	server/server.go:63	shutdown HTTP server...
-2026-04-23T23:59:01.762775	WARN	server/server.go:77	HTTP server stopped

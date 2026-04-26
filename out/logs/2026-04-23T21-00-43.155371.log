@@ -1,9 +1,0 @@
-2026-04-24T00:00:43.155584	DEBUG	todoapp/main.go:34	initializing postgres connection pool
-2026-04-24T00:00:43.169107	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
-2026-04-24T00:00:43.169233	DEBUG	todoapp/main.go:49	initializing HTTP server
-2026-04-24T00:00:43.169417	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
-2026-04-24T00:00:46.945291	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "73e9f52a-7ebe-4cf9-a70d-f33744436885", "url": "/api/v1/users", "time": "2026-04-23T21:00:46.945289"}
-2026-04-24T00:00:46.987872	ERROR	response/handler.go:64	failed to create user	{"request_id": "73e9f52a-7ebe-4cf9-a70d-f33744436885", "url": "/api/v1/users", "error": "create user: scan error: ERROR: relation \"todoapp.users\" does not exist (SQLSTATE 42P01)"}
-2026-04-24T00:00:46.988030	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "73e9f52a-7ebe-4cf9-a70d-f33744436885", "url": "/api/v1/users", "status_code": 500, "latency": "42.739897ms"}
-2026-04-24T00:00:56.045459	WARN	server/server.go:63	shutdown HTTP server...
-2026-04-24T00:00:56.045950	WARN	server/server.go:77	HTTP server stopped

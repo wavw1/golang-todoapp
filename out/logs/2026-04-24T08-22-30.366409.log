@@ -1,9 +1,0 @@
-2026-04-24T11:22:30.366659	DEBUG	todoapp/main.go:34	initializing postgres connection pool
-2026-04-24T11:22:30.379563	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
-2026-04-24T11:22:30.379807	DEBUG	todoapp/main.go:49	initializing HTTP server
-2026-04-24T11:22:30.380109	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
-2026-04-24T11:23:11.666678	DEBUG	middleware/common.go:80	>>> incoming HTTP request	{"request_id": "1271fb04-92c3-481e-a492-03cc4573e269", "url": "/api/v1/users", "time": "2026-04-24T08:23:11.666675"}
-2026-04-24T11:23:11.709061	ERROR	response/handler.go:64	failed to get users	{"request_id": "1271fb04-92c3-481e-a492-03cc4573e269", "url": "/api/v1/users", "error": "get users from repository: select users: ERROR: syntax error at or near \"ASK\" (SQLSTATE 42601)"}
-2026-04-24T11:23:11.709285	DEBUG	middleware/common.go:87	<<< done HTTP request	{"request_id": "1271fb04-92c3-481e-a492-03cc4573e269", "url": "/api/v1/users", "status_code": 500, "latency": "42.609481ms"}
-2026-04-24T11:24:05.967860	WARN	server/server.go:63	shutdown HTTP server...
-2026-04-24T11:24:05.968259	WARN	server/server.go:77	HTTP server stopped

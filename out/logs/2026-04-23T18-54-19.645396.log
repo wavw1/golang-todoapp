@@ -1,2 +1,0 @@
-2026-04-23T21:54:19.645578	DEBUG	todoapp/main.go:34	initializing postgres connection pool
-2026-04-23T21:54:19.653799	FATAL	todoapp/main.go:40	failed to init postgres connection pool	{"error": "pgxpool ping: failed to connect to `user=test-user-123 database=test-db`: 127.0.0.1:5432 (localhost): failed SASL auth: FATAL: password authentication failed for user \"test-user-123\" (SQLSTATE 28P01)"}

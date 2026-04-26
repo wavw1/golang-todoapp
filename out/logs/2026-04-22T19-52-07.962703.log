@@ -1,4 +1,0 @@
-2026-04-22T22:52:07.962907	DEBUG	todoapp/main.go:30	Starting ToDo application!
-2026-04-22T22:52:07.963238	WARN	server/server.go:41	start HTTP server	{"addr": ":5050"}
-2026-04-22T22:54:51.494775	WARN	server/server.go:56	shutdown HTTP server...
-2026-04-22T22:54:51.495358	WARN	server/server.go:70	HTTP server stopped
