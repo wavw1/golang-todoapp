@@ -1,0 +1,13 @@
+2026-04-27T12:20:06.663071	DEBUG	todoapp/main.go:44	application time zone	{"zone": "UTC"}
+2026-04-27T12:20:06.663357	DEBUG	todoapp/main.go:46	initializing postgres connection pool
+2026-04-27T12:20:06.674628	DEBUG	todoapp/main.go:56	initializing feature	{"feature": "users"}
+2026-04-27T12:20:06.674796	DEBUG	todoapp/main.go:61	initializing feature	{"feature": "tasks"}
+2026-04-27T12:20:06.674818	DEBUG	todoapp/main.go:66	initializing HTTP server
+2026-04-27T12:20:06.675066	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-27T12:20:09.438093	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "406faed5-771e-4a18-b33d-504dac6ef1cd", "url": "/api/v1/tasks", "http_method": "GET", "time": "2026-04-27T12:20:09.438091"}
+2026-04-27T12:20:09.441506	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "406faed5-771e-4a18-b33d-504dac6ef1cd", "url": "/api/v1/tasks", "status_code": 200, "latency": "3.412634ms"}
+2026-04-27T12:21:48.736895	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "d78a2c56-3d6f-4cd9-b265-5bf0bca4988d", "url": "/api/v1/tasks?user_id=2", "http_method": "GET", "time": "2026-04-27T12:21:48.736892"}
+2026-04-27T12:21:48.779681	ERROR	response/handler.go:71	failed to get tasks	{"request_id": "d78a2c56-3d6f-4cd9-b265-5bf0bca4988d", "url": "/api/v1/tasks?user_id=2", "error": "get tasks from repository: select tasks: ERROR: syntax error at or near \"WHERE\" (SQLSTATE 42601)"}
+2026-04-27T12:21:48.779865	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "d78a2c56-3d6f-4cd9-b265-5bf0bca4988d", "url": "/api/v1/tasks?user_id=2", "status_code": 500, "latency": "42.972022ms"}
+2026-04-27T12:22:05.403932	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-27T12:22:05.404385	WARN	server/server.go:77	HTTP server stopped

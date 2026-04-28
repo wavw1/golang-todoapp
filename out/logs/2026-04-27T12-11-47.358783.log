@@ -1,0 +1,11 @@
+2026-04-27T12:11:47.359078	DEBUG	todoapp/main.go:44	application time zone	{"zone": "UTC"}
+2026-04-27T12:11:47.359376	DEBUG	todoapp/main.go:46	initializing postgres connection pool
+2026-04-27T12:11:47.378776	DEBUG	todoapp/main.go:56	initializing feature	{"feature": "users"}
+2026-04-27T12:11:47.379038	DEBUG	todoapp/main.go:61	initializing feature	{"feature": "tasks"}
+2026-04-27T12:11:47.379063	DEBUG	todoapp/main.go:66	initializing HTTP server
+2026-04-27T12:11:47.379269	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-27T12:12:14.032575	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "a37a23da-b75a-47a4-9cd9-25e356ef926d", "url": "/api/v1/tasks", "http_method": "GET", "time": "2026-04-27T12:12:14.032572"}
+2026-04-27T12:12:14.049614	ERROR	response/handler.go:71	failed to get tasks	{"request_id": "a37a23da-b75a-47a4-9cd9-25e356ef926d", "url": "/api/v1/tasks", "error": "get tasks from repository: scan tasks: number of field descriptions must equal number of destinations, got 1 and 8"}
+2026-04-27T12:12:14.049759	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "a37a23da-b75a-47a4-9cd9-25e356ef926d", "url": "/api/v1/tasks", "status_code": 500, "latency": "17.186069ms"}
+2026-04-27T12:12:42.437282	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-27T12:12:42.437766	WARN	server/server.go:77	HTTP server stopped
