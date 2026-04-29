@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	core_logger "github.com/wavw1/golang-todoapp/internal/core/logger"
+	core_http_request "github.com/wavw1/golang-todoapp/internal/core/transport/http/request"
 	core_http_response "github.com/wavw1/golang-todoapp/internal/core/transport/http/response"
-	core_http_utils "github.com/wavw1/golang-todoapp/internal/core/transport/http/utils"
 )
 
 type GetTasksResponse []TaskDTOResponse
@@ -49,17 +49,17 @@ func getUserIDLimitOffsetQueryParams(r *http.Request) (*int, *int, *int, error) 
 		offsetQueryParamKey = "offset"
 	)
 
-	userID, err := core_http_utils.GetIntQueryParam(r, userIDQueryParamKey)
+	userID, err := core_http_request.GetIntQueryParam(r, userIDQueryParamKey)
 	if err != nil {
 		return nil, nil, nil, fmt.Errorf("get `user_id` query param: %w", err)
 	}
 
-	limit, err := core_http_utils.GetIntQueryParam(r, limitQueryParamKey)
+	limit, err := core_http_request.GetIntQueryParam(r, limitQueryParamKey)
 	if err != nil {
 		return nil, nil, nil, fmt.Errorf("get `limit` query param: %w", err)
 	}
 
-	offset, err := core_http_utils.GetIntQueryParam(r, offsetQueryParamKey)
+	offset, err := core_http_request.GetIntQueryParam(r, offsetQueryParamKey)
 	if err != nil {
 		return nil, nil, nil, fmt.Errorf("get `offset` query param: %w", err)
 	}
