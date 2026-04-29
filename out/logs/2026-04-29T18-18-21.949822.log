@@ -1,0 +1,31 @@
+2026-04-29T18:18:21.950043	DEBUG	todoapp/main.go:45	application time zone	{"zone": "UTC"}
+2026-04-29T18:18:21.950233	DEBUG	todoapp/main.go:47	initializing postgres connection pool
+2026-04-29T18:18:21.969212	DEBUG	todoapp/main.go:57	initializing feature	{"feature": "users"}
+2026-04-29T18:18:21.969489	DEBUG	todoapp/main.go:62	initializing feature	{"feature": "tasks"}
+2026-04-29T18:18:21.969526	DEBUG	todoapp/main.go:67	initializing feature	{"feature": "statistics"}
+2026-04-29T18:18:21.969554	DEBUG	todoapp/main.go:72	initializing HTTP server
+2026-04-29T18:18:21.969887	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-29T18:19:44.140210	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "df911a12-21ee-4358-8764-4a3a39a598a4", "url": "/api/v1/tasks", "http_method": "GET", "time": "2026-04-29T18:19:44.140207"}
+2026-04-29T18:19:44.144541	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "df911a12-21ee-4358-8764-4a3a39a598a4", "url": "/api/v1/tasks", "status_code": 200, "latency": "4.331524ms"}
+2026-04-29T18:20:04.174933	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "593149d1-d7fa-4270-8783-fc4b74681770", "url": "/api/v1/tasks/4", "http_method": "DELETE", "time": "2026-04-29T18:20:04.174930"}
+2026-04-29T18:20:04.179197	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "593149d1-d7fa-4270-8783-fc4b74681770", "url": "/api/v1/tasks/4", "status_code": 204, "latency": "4.263369ms"}
+2026-04-29T18:20:09.582717	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "72691700-48e0-4043-9989-97e6bf246a56", "url": "/api/v1/tasks/5", "http_method": "DELETE", "time": "2026-04-29T18:20:09.582714"}
+2026-04-29T18:20:09.585888	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "72691700-48e0-4043-9989-97e6bf246a56", "url": "/api/v1/tasks/5", "status_code": 204, "latency": "3.170968ms"}
+2026-04-29T18:20:14.015597	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "41757af4-3cf1-4563-8f65-c05e2eea7533", "url": "/api/v1/tasks", "http_method": "GET", "time": "2026-04-29T18:20:14.015594"}
+2026-04-29T18:20:14.017255	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "41757af4-3cf1-4563-8f65-c05e2eea7533", "url": "/api/v1/tasks", "status_code": 200, "latency": "1.658414ms"}
+2026-04-29T18:20:30.647892	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "c6b0a115-a4a8-4fbb-a51b-dec74dbd88dd", "url": "/api/v1/users", "http_method": "GET", "time": "2026-04-29T18:20:30.647889"}
+2026-04-29T18:20:30.652679	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "c6b0a115-a4a8-4fbb-a51b-dec74dbd88dd", "url": "/api/v1/users", "status_code": 200, "latency": "4.787475ms"}
+2026-04-29T18:21:03.040967	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "612b21df-adae-4fdc-8fd9-4ebdb15219ec", "url": "/api/v1/tasks", "http_method": "POST", "time": "2026-04-29T18:21:03.040964"}
+2026-04-29T18:21:03.047453	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "612b21df-adae-4fdc-8fd9-4ebdb15219ec", "url": "/api/v1/tasks", "status_code": 201, "latency": "6.485757ms"}
+2026-04-29T18:21:22.384286	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "35b8fcd3-1c67-4a09-a8d4-e5ca8b91df85", "url": "/api/v1/tasks", "http_method": "POST", "time": "2026-04-29T18:21:22.384283"}
+2026-04-29T18:21:22.408372	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "35b8fcd3-1c67-4a09-a8d4-e5ca8b91df85", "url": "/api/v1/tasks", "status_code": 201, "latency": "24.084615ms"}
+2026-04-29T18:21:33.543362	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "694efff2-4fe4-4a9a-82bb-032618aab70f", "url": "/api/v1/tasks", "http_method": "POST", "time": "2026-04-29T18:21:33.543359"}
+2026-04-29T18:21:33.546942	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "694efff2-4fe4-4a9a-82bb-032618aab70f", "url": "/api/v1/tasks", "status_code": 201, "latency": "3.580202ms"}
+2026-04-29T18:21:47.924352	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "4cca8c5e-b7ee-486b-a837-fdcba9d8cd24", "url": "/api/v1/tasks", "http_method": "POST", "time": "2026-04-29T18:21:47.924348"}
+2026-04-29T18:21:47.927696	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "4cca8c5e-b7ee-486b-a837-fdcba9d8cd24", "url": "/api/v1/tasks", "status_code": 201, "latency": "3.344835ms"}
+2026-04-29T18:21:54.484198	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "9ade952a-ae1e-4523-adb5-5662b004548d", "url": "/api/v1/tasks", "http_method": "GET", "time": "2026-04-29T18:21:54.484195"}
+2026-04-29T18:21:54.485789	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "9ade952a-ae1e-4523-adb5-5662b004548d", "url": "/api/v1/tasks", "status_code": 200, "latency": "1.592183ms"}
+2026-04-29T18:22:38.479479	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "13e74d8a-6a7e-4d0b-bf66-209c87a29404", "url": "/api/v1/statistics", "http_method": "GET", "time": "2026-04-29T18:22:38.479476"}
+2026-04-29T18:22:38.481832	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "13e74d8a-6a7e-4d0b-bf66-209c87a29404", "url": "/api/v1/statistics", "status_code": 200, "latency": "2.35299ms"}
+2026-04-29T18:23:31.299549	WARN	server/server.go:63	shutdown HTTP server...
+2026-04-29T18:23:31.299955	WARN	server/server.go:77	HTTP server stopped
