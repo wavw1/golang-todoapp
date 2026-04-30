@@ -1,0 +1,8 @@
+2026-04-30T13:17:44.477523	DEBUG	todoapp/main.go:45	application time zone	{"zone": "UTC"}
+2026-04-30T13:17:44.477784	DEBUG	todoapp/main.go:47	initializing postgres connection pool
+2026-04-30T13:17:44.497704	DEBUG	todoapp/main.go:57	initializing feature	{"feature": "users"}
+2026-04-30T13:17:44.497812	DEBUG	todoapp/main.go:62	initializing feature	{"feature": "tasks"}
+2026-04-30T13:17:44.497840	DEBUG	todoapp/main.go:67	initializing feature	{"feature": "statistics"}
+2026-04-30T13:17:44.497866	DEBUG	todoapp/main.go:72	initializing HTTP server
+2026-04-30T13:17:44.498124	WARN	server/server.go:48	start HTTP server	{"addr": "\":5050\""}
+2026-04-30T13:17:44.499291	ERROR	todoapp/main.go:91	HTTP server run error	{"error": "listen and serve HTTP: listen tcp: lookup tcp/5050\": unknown port"}

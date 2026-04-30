@@ -1,0 +1,13 @@
+2026-04-30T13:19:43.381263	DEBUG	todoapp/main.go:45	application time zone	{"zone": "UTC"}
+2026-04-30T13:19:43.381389	DEBUG	todoapp/main.go:47	initializing postgres connection pool
+2026-04-30T13:19:43.387001	DEBUG	todoapp/main.go:57	initializing feature	{"feature": "users"}
+2026-04-30T13:19:43.387058	DEBUG	todoapp/main.go:62	initializing feature	{"feature": "tasks"}
+2026-04-30T13:19:43.387071	DEBUG	todoapp/main.go:67	initializing feature	{"feature": "statistics"}
+2026-04-30T13:19:43.387083	DEBUG	todoapp/main.go:72	initializing HTTP server
+2026-04-30T13:19:43.387216	WARN	server/server.go:48	start HTTP server	{"addr": ":5050"}
+2026-04-30T13:21:36.876075	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "cdb81a06-43e5-4e3a-9772-a91a7728f4ff", "url": "/api/v1/users", "http_method": "GET", "time": "2026-04-30T13:21:36.876069"}
+2026-04-30T13:21:36.894482	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "cdb81a06-43e5-4e3a-9772-a91a7728f4ff", "url": "/api/v1/users", "status_code": 200, "latency": "18.406547ms"}
+2026-04-30T13:22:09.153824	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "7dd7f341-1f67-4ebe-a1d9-b93c7f77ed96", "url": "/api/v1/users", "http_method": "GET", "time": "2026-04-30T13:22:09.153816"}
+2026-04-30T13:22:09.155303	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "7dd7f341-1f67-4ebe-a1d9-b93c7f77ed96", "url": "/api/v1/users", "status_code": 200, "latency": "1.474882ms"}
+2026-04-30T13:22:17.663008	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "7cb8704a-26ab-4e2c-b546-a7ca8f188e71", "url": "/api/v1/tasks", "http_method": "GET", "time": "2026-04-30T13:22:17.663002"}
+2026-04-30T13:22:17.666683	DEBUG	middleware/common.go:66	<<< done HTTP request	{"request_id": "7cb8704a-26ab-4e2c-b546-a7ca8f188e71", "url": "/api/v1/tasks", "status_code": 200, "latency": "3.675122ms"}
