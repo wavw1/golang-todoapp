@@ -59,10 +59,20 @@ todoapp-run:
 	go run cmd/todoapp/main.go
 
 todoapp-deploy:
+	@mkdir -p ${PROJECT_ROOT}/out/logs
+	@chown -R $(shell id -u):$(shell id -g) ${PROJECT_ROOT}/out 2>/dev/null || true
 	@docker compose up -d --build todoapp
 
 todoapp-undeploy:
 	@docker compose down todoapp
+
+swagger-gen:
+	@docker compose run --rm swagger \
+		init \
+		-g cmd/todoapp/main.go \
+		-o docs \
+		--parseInternal \
+		--parseDependency
 
 ps:
 	@docker compose ps
@@ -70,7 +80,7 @@ ps:
 logs-cleanup:
 	@read -p "Очистить все log файлы окружения? Опасность утери логов. [y/N]: " ans; \
 	if [ "$$ans" = "y" ]; then \
-		rm -rf ${PROJECT_ROOT}/out/logs && \
+		rm -rf ${PROJECT_ROOT}/out/logs/* && \
 		echo "Файлы логов очищены"; \
 	else \
 		echo "Очистка логов отменена"; \
